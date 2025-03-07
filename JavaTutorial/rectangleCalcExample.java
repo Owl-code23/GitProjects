@@ -1,4 +1,4 @@
-public class rectangleCalcExample {
+public class RectangleCalcExample {
     public static void main(String[] args) {
         int length = 4;
         int width = 6;
