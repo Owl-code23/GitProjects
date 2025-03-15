@@ -40,7 +40,7 @@ public class RealLifeExample {
 
         if (myNum > 0) {
             System.out.println("The value is a positive number.");
-        } else if (myNum < 0){
+        } else if (myNum < 0) {
             System.out.println("The value is a negative number.");
         } else {
             System.out.println("The value is 0.");
@@ -110,10 +110,10 @@ public class RealLifeExample {
         int number = 2;
 
         for (int i = 1; i <= 10; i++) {
-            System.out.println(number + " x "  + i + " = " + (number * i));
+            System.out.println(number + " x " + i + " = " + (number * i));
         }
 
-        int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
+        int ages[] = { 20, 22, 18, 35, 48, 26, 87, 70 };
 
         float avg, sum = 0;
 
