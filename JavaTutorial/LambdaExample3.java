@@ -1,7 +1,3 @@
-interface StringFunction {
-  String run(String str);
-}
-
 public class LambdaExample3 {
   public static void main(String[] args) {
     StringFunction exclaim = (s) -> s + "!";
@@ -14,4 +10,8 @@ public class LambdaExample3 {
     String result = format.run(str);
     System.out.println(result);
   }
+}
+
+interface StringFunction {
+  String run(String str);
 }
