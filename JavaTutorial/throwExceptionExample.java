@@ -1,4 +1,4 @@
-public class throwExceptionExample {
+public class ThrowExceptionExample {
     static void chechAge(int age) {
         if (age < 18) {
             throw new ArithmeticException("Access denied - You must be at least 18 years old.");
