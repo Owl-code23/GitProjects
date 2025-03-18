@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Image Maps</h2>
+    <img src="workplace.png" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="https://de.wikipedia.org/wiki/Computer" alt="Computer"
+            target="_blank">
+        <area shape="rect" coords="290,172,333,250" href="https://de.wikipedia.org/wiki/Smartphone" alt="Phone"
+            target="_blank">
+        <area shape="circle" coords="337,300,44" href="https://de.wikipedia.org/wiki/Kaffee" alt="Cup of coffee"
+            target="_blank" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction() {
+            alert("TEST TEST 123 You clicked the coffe cup!")
+        }
+    </script>
+</body>
+
+</html>
