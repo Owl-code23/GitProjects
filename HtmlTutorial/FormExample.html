@@ -104,9 +104,9 @@
         <input type="color" id="favcolor" name="favcolor" value="#ff0000">
     </form>
     <br />
-    <form action="">
+    <form action="" id="birthdayid">
         <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" min="2000-01-01" max="2025-03-29"><br />
+        <input type="date" id="birthday" name="birthday" min="2000-01-01" max="2025-03-29" form="birthdayid"><br />
         <label for="birthdaytime">Birthday (date and time):</label>
         <input type="datetime-local" id="birth" name="birthdaytime"><br />
         <label for="bdaymonth">Birthday (month and year):</label>
@@ -118,6 +118,7 @@
     <form action="">
         <label for="email">Enter your email:</label>
         <input type="email" id="email" name="email">
+        <input type="submit" formaction="" value="Submit" formmethod="post" formtarget="_blank">
     </form>
     <br />
     <form action="">
