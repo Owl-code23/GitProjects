@@ -12,11 +12,11 @@
     <form>
         <label for="fname">First name:</label>
         <br />
-        <input type="text" id="fname" name="fname" value="Jeff" />
+        <input type="text" id="fname" name="fname" value="Jeff" maxlength="8"/>
         <br />
         <label for="lname">Last name:</label>
         <br />
-        <input type="text" id="lname" name="lname" value="Yooooooo" />
+        <input type="text" id="lname" name="lname" value="Yooooooo" required/>
     </form>
     <p>Default width of text input fields is 20 characters</p>
 
@@ -63,11 +63,11 @@
             <legend>Personalia:</legend>
             <label for="fname">First name:</label>
             <br />
-            <input type="text" id="fname" name="fname" value="firstname" />
+            <input type="text" id="fname" name="fname" value="firstname" readonly />
             <br />
             <label for="lname">Last name:</label>
             <br />
-            <input type="text" id="lname" name="lname" value="lastname" />
+            <input type="text" id="lname" name="lname" value="lastname" disabled />
         </fieldset>
     </form>
     <br />
@@ -93,7 +93,7 @@
     <br />
     <form action="">
         <label for="username">Username:</label><br />
-        <input type="text" id="username" name="username"><br />
+        <input type="text" id="username" name="username" autofocus><br />
         <label for="pwd">Password:</label><br />
         <input type="password" id="pwd" name="pwd"><br /><br />
         <input type="reset" value="Reset">
@@ -122,7 +122,7 @@
     <br />
     <form action="">
         <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile">
+        <input type="file" id="myfile" name="myfile" multiple>
     </form>
     <br />
     <form action="">
@@ -158,7 +158,7 @@
     <br>
     <form action="">
         <label for="homepage">Add your homepage:</label>
-        <input type="url" id="homepage" name="homepage">
+        <input type="url" id="homepage" name="homepage" size="40">
     </form>
 </body>
 
