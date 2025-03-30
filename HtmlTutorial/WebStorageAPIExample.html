@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <button onclick="clickCounter()" type="button">Button</button>
+    <p id="result2"></p>
+    <br>
+    <button onclick="clickCounterSession()" type="button">Button Session</button>
+    <p id="result3"></p>
+
+    <script>
+        const x = document.getElementById("result");
+
+        if (typeof(Storage) !== "undefined") {
+            localStorage.setItem("lastname", "Smith");
+            localStorage.setItem("bgcolor", "yellow");
+            x.innerHTML = localStorage.getItem("lastname");
+            x.style.backgroundColor = localStorage.getItem("bgcolor");
+        } else {
+            x.innerHTML = "Sorry, no Web storage support!";
+        }
+
+        function clickCounter() {
+            const x = document.getElementById("result2");
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                x.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+            } else {
+                x.innerHTML = "Sorry, no Web storage support!";
+            }
+        }
+
+        function clickCounterSession() {
+            const x = document.getElementById("result3");
+            if (typeof(Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                x.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
+            } else {
+                x.innerHTML = "Sorry, no Web storage support!";
+            }
+        }
+    </script>
+</body>
+</html>
