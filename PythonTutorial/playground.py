@@ -1,5 +1,9 @@
 import sys
 import random
+import mymodule as mx
+#only import parts from a module
+from mymodule import person1
+import platform
 
 print(sys.version)
 
@@ -233,3 +237,17 @@ print(3 >> 1) # 1 Shift right
 3 = 0000000000000011
 1 = 0000000000000001
 """
+
+#module_name.function_name
+mx.greeting("Jonathan")
+
+a = mx.person1["age"]
+print(a)
+
+#Build-in Modules
+x = platform.system()
+print(x)
+
+#list all function names (or variable names)
+x = dir(mx)
+print(x)
