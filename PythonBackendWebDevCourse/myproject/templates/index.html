@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <h1>Input your text below: </h1>
 
-    <form method="" action="counter">
+    <form method="POST" action="counter/">
+        {% csrf_token %}
         <textarea name="text" rows="25" cols="100"></textarea><br>
         <input type="submit" />
     </form>
+    <div>
+        <h1>{{ feature.name }} {{ feature.id }}</h1>
+        <p>{{ feature.details }}</p>
+    </div>
 </body>
 </html>
