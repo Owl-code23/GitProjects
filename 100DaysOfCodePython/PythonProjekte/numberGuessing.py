@@ -1,4 +1,4 @@
-from arts.number_guessing_art import logo
+from arts_and_data.number_guessing_art import logo
 import random
 
 # TODO#1: print the logo and welcome the user
