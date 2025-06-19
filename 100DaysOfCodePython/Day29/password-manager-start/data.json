@@ -1,0 +1,30 @@
+{
+    "amazon": {
+        "email": "dummy@gmail.com",
+        "password": "h#42yQG$bAp&eo!E"
+    },
+    "ebay": {
+        "email": "daedae",
+        "password": "eCf+kh8N*K8C&5"
+    },
+    "vitronic": {
+        "email": "dummy@gmail.com",
+        "password": "9HO6Y3(5xgew&X"
+    },
+    "localbrandx": {
+        "email": "dummy@gmail.com",
+        "password": "Bo1pWM0#*uYK2o"
+    },
+    "debeka": {
+        "email": "dummy@gmail.com",
+        "password": "o6Vo+kJW9u%6kKG"
+    },
+    "seibert": {
+        "email": "dummy@gmail.com",
+        "password": "WAWe4d&)8%$zuUi63K"
+    },
+    "bechtle": {
+        "email": "dummy@gmail.com",
+        "password": "fuV!w)RT5gE9T"
+    }
+}
